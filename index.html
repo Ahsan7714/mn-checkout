@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <form action="">
+        <div class="form">
+            <div class="left-form">
+                <h2>BILLING DETAILS</h2>
+                <div class="input-container">
+                    <span class="inputs">
+                        <input type="text" required>
+                        <Label>First name</Label> 
+                    </span>
+                    <span class="inputs">
+                        <input type="text" required>
+                        <Label>Last name</Label>
+                    </span>
+                </div>
+                <h4>Country / Region</h4>
+                <h5>United Kingdom (UK)</h5>
+                <div class="input-container">
+                    <span class="inputs">
+                        <input type="text" required>
+                        <Label>Street Address</Label>
+                    </span>
+                    <span class="inputs">
+                        <input type="text" required>
+                        <Label>Apartment,suite,etc.</Label>
+                    </span>
+                </div>
+                <div class="vertical-inputs">
+                    <span class="inputs">
+                        <input type="text" required>
+                        <Label>Town/ City</Label>
+                    </span>
+                    <span class="inputs">
+                        <input type="text" required>
+                        <Label>State/ Country</Label>
+                    </span>
+                    <span class="inputs">
+                        <input type="text" required>
+                        <Label>Postcode/ ZIP</Label>
+                    </span>
+                    <span class="inputs">
+                        <input type="text" required>
+                        <Label>Phone</Label>
+                    </span>
+                    <span class="inputs">
+                        <input type="text" required>
+                        <Label>Email address</Label>
+                    </span>
+                    <span class="inputs">
+                        <input type="text" required>
+                        <Label>Username</Label>
+                    </span>
+                    <span class="inputs">
+                        <input type="password" required>
+                        <Label>Password</Label>
+                    </span>
+                </div>
+                <div class="new-form">
+                    <span class="check-box">
+                        <input type="checkbox"  id="addressCheckbox">
+                        <Label>Ship to a different address ?</Label>
+                    </span>
+                </div>
+                <div class="additional-address"  >
+                    <div class="input-container">
+                        <span class="inputs">
+                            <input type="text" required>
+                            <Label>First name</Label>
+                        </span>
+                        <span class="inputs">
+                            <input type="text" required>
+                            <Label>Last name</Label>
+                        </span>
+                    </div>
+                    <h4>Country / Region</h4>
+                    <h5>United Kingdom (UK)</h5>
+                    <div class="input-container">
+                        <span class="inputs">
+                            <input type="text" required>
+                            <Label>Street Address</Label>
+                        </span>
+                        <span class="inputs">
+                            <input type="text" required>
+                            <Label>Apartment,(optional)</Label>
+                        </span>
+                    </div>
+                    <div class="vertical-inputs">
+                        <span class="inputs">
+                            <input type="text" required>
+                            <Label>Town/ City</Label>
+                        </span>
+                        <span class="inputs">
+                            <input type="text" required>
+                            <Label>State/ Country</Label>
+                        </span>
+                        <span class="inputs">
+                            <input type="text" required>
+                            <Label>Postcode/ ZIP</Label>
+                        </span>
+                </div>
+            </div>
+
+                <span class="text-area">
+                    <label for="">Notes about your order,e.g special notes for delivery</label>
+                    <textarea name="" id="" cols="50" rows="4"></textarea>
+                </span>
+            </div>
+            <div class="right-form">
+                <div class="box">
+                    <div class="box-content">
+                        <h3>Your Order</h3>
+                        <span class="head">
+                            <p>PRODUCT</p>
+                            <p>SUBTOTAL</p>
+                        </span>
+                        <p style="color: #808180;">HOUSTEN SKY BLUE CORNER SOFA <br> BED</p>
+                        <div class="content-y">
+                            <span class="content-a">
+                                <span class="font"><span class="small-f">Estimated Delivery :</span> <span class="large-f">December 16,<br> 2023 To December 26,2023</span></span>
+                                <span class="bold">£899.99</span>
+                            </span>
+                            <span class="x1">× 1</span>
+                            
+                        </div>
+                        <div class="content-z">
+                            <span class="content-z-1">Subtotal</span>
+                            <span class="bold">£899.99</span>
+                        </div>
+                        <div class="content-z">
+                            <span class="content-z-1">Shipping</span>
+                            <span class="shipping">Free shipping</span>
+                        </div>
+                        <div class="content-z">
+                            <span class="content-z-1">Total</span>
+                            <span class="bold">£899.99</span>
+                        </div>
+                        <div class="payments">
+                            <span class="debit-card">
+                                <input type="radio" name="payment" id="debitCardRadio">
+                                <label for="debitCardRadio">Pay by Debit/Credit Card</label>
+                                <img src="Capture.PNG" alt="">
+                            </span>
+                            
+                           <div class="debit-card-form" style="display: none;">
+                             <span class="debit-card-a">
+                               <label for="cardNumber">Card Number*</label>
+                               <input type="number" id="cardNumber" required>
+                             </span>
+                             <span class="debit-card-b">
+                                <span class="debit-card-b1">
+                                    <label for="">Expiry(MM/YY)*</label>
+                                    <input type="text" id="expiry" name="expiry" placeholder="MM/YY" pattern="^(0[1-9]|1[0-2])\/\d{2}$" required>
+                                </span>
+                                <span class="debit-card-b2">
+                                    <label for="">CVV*</label>
+                                    <input type="number" maxlength="4" pattern="\d{4}" required>
+                                </span>
+                             </span>
+                             <button class="place-btn">PLACE ORDER</button>
+                               
+                         </div>
+                            <span class="paypal">
+                                <input type="radio" name="payment" id="paypalRadio">
+                                <label for="paypalRadio">Paypal <span>What is Paypal?</span></label>
+                            </span>
+                            <div class="paypal-button">
+                                <p>You will be directed to PayPal website</p>
+                                <button class="paypal-btn">PROCEED TO PAYPAL</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <script>
+         const addressCheckbox = document.getElementById('addressCheckbox');
+        const additionalAddressDiv = document.querySelector('.additional-address');
+
+        addressCheckbox.addEventListener('change', function () {
+            if (addressCheckbox.checked) {
+                // Show the additional address div with a smooth transition
+                additionalAddressDiv.style.display = 'block';
+                additionalAddressDiv.style.maxHeight = additionalAddressDiv.scrollHeight + 'px';
+            } else {
+                // Hide the additional address div with a smooth transition
+                additionalAddressDiv.style.maxHeight = 0;
+                setTimeout(() => {
+                    additionalAddressDiv.style.display = 'none';
+                }, 500); // Delay the display:none until the transition completes (0.5s)
+            }
+        });
+
+
+        const debitCardRadio = document.getElementById('debitCardRadio');
+        const paypalRadio = document.getElementById('paypalRadio');
+        const debitCardForm = document.querySelector('.debit-card-form');
+        const paypalButton = document.querySelector('.paypal-button');
+
+        debitCardRadio.addEventListener('change', function() {
+            if (debitCardRadio.checked) {
+                debitCardForm.style.display = 'block';
+                paypalButton.style.display = 'none';
+            }
+        });
+
+        paypalRadio.addEventListener('change', function() {
+            if (paypalRadio.checked) {
+                debitCardForm.style.display = 'none';
+                paypalButton.style.display = 'block';
+            }
+        });
+
+
+        
+    </script>
+</body>
+</html>

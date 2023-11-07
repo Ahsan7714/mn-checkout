@@ -1,0 +1,328 @@
+body{
+    font-family: Lato ,sans-serif;
+}
+.form{
+    display: flex;
+    gap: 2rem;
+    justify-content: space-around;
+}
+.left-form{
+    flex: 2;
+    border-top: 3px solid #dddddd;
+}
+.right-form{
+    flex: 2;
+}
+.input-container{
+    display: flex;
+    gap: 2rem;
+}
+.inputs{
+    position: relative;
+    margin-top: -8px;
+  }
+.inputs label {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+    font-weight: 400;
+    color:  #7a8490;
+    transition: 0.3s ease-in-out;
+  }
+.inputs input{
+    height: 23px;
+    width: 288px;
+    padding: 10px;
+    border: 1px solid #e5e5e5;
+    font-size: 16px;
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.2);
+    outline: none;
+  }
+  .inputs input:focus {
+    box-shadow: 0 0.5px 3px rgba(0, 0, 0, 0.2);
+    transform: 0.1s;
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+.inputs input:hover {
+    box-shadow: none; 
+}
+.inputs input:valid+label,
+.inputs input:focus+label{
+    font-size: 11px;
+    top: -0.5px;
+    pointer-events: none;
+    padding-top: 2px;
+}
+
+h5{
+    color: #797b7b;
+    margin-top: -10px;
+    font-size: 17px;
+    font-weight: 600;
+}
+.vertical-inputs{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.vertical-inputs input{
+    width: 97%;
+}
+.check-box{
+    display: flex;
+    gap: 0rem;
+}
+.new-form{
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+.check-box{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.check-box input{
+    width: 13px;
+    height: 13px;
+}
+.check-box label{
+    font-size: 16px;
+}
+.text-area{
+    position: relative;
+}
+.text-area label{
+    position: absolute;
+    color:  #7a8490;
+    padding-top: 13px;
+    left: 10px;
+}
+.text-area textarea{
+    border: 1px solid #e5e5e5;
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.2);
+    padding: 10px ;
+    font-size: 16px;
+    font-family: Lato,sans-serif;
+    outline: none;
+    width: 97%;
+}
+.additional-address{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: none;
+    max-height: 0;
+    transition: max-height 0.5s ease; 
+}
+.text-area textarea:focus {
+    box-shadow: 0 0.5px 3px rgba(0, 0, 0, 0.2);
+    transform: 0.1s; /* Add a slight zoom effect */
+}
+
+.text-area textarea:hover {
+    box-shadow: none; 
+}
+.box{
+    border: 2px solid #00c8c4;
+    width: 80%;
+}
+.box-content{
+    margin: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    color: #6d6d6d;
+    margin-top: -22px;
+    font-weight: 600;
+    border-bottom: 3px solid #ececec;
+}
+.content-y{
+    display: flex;
+    flex-direction: column;
+    margin-top: -10px;
+    gap: 5px;
+    border-bottom: 1px solid #ececec;
+    padding-bottom: 15px;
+}
+.content-a{
+    display: flex;
+    justify-content: space-between;
+}
+.bold{
+    font-size: 25px;
+    font-weight: 600;
+    font-family: SemplicitalPro;
+}
+.font{
+    background-color: #fcfcfc;
+    width: 70%;
+    padding: 2px;
+    border: 1px solid #fcfcfc;
+    border-radius: 2px;
+}
+.small-f{
+    font-size: 14px;
+    color:   #808180;
+}
+.large-f{
+    font-size: 14px;
+    font-weight: 600;
+    color: #666668;
+}
+.x1{
+    color: #666668;
+}
+.content-z{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+    border-bottom: 1px solid #ececec ;
+    align-items: center;
+}
+.content-z-1{
+    color: #666668;
+    font-weight: 540;
+    font-size: 14px;
+}
+.shipping{
+    font-size: 12px;
+    color: #666660;
+}
+.payments{
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.debit-card{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid #ececec ;
+    padding-bottom: 10px;
+}
+.debit-card label{
+    font-weight: 700;
+    font-size: 14px;
+}
+.debit-card img{
+    height: 30px;
+    width: 120px;
+}
+.paypal label{
+    font-weight: 700;
+    font-size: 14px;
+}
+.paypal span{
+    color: #00c8c4;
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.paypal span:hover{
+    color: #02928f;
+}
+.debit-card-a{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.debit-card-a label{
+    font-size: 13px;
+    font-weight: 500;
+}
+.debit-card-a>input{
+    height: 15px;
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #e5e5e5;
+    font-size: 16px;
+    box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+.debit-card-b{
+    display: flex;
+    gap: 6px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.debit-card-b label{
+    font-size: 13px;
+    font-weight: 500;
+}
+.debit-card-b1{
+    flex-direction: column;
+    gap: 0rem;
+}
+.debit-card-b input{
+    margin-top: 7px;
+    height: 15px;
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #e5e5e5;
+    font-size: 16px;
+    box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+.debit-card-b1>input{
+    width: 170px;
+}
+.debit-card-b2>input{
+    width: 70px;
+}
+input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0; /* Optional: Remove any default margin */
+        }
+.place-btn{
+    height: 35px;
+    width: 150px;
+    background-color: #00c8c4;
+    color: white;
+    font-weight: 600;
+    border: none;
+    font-size: 15px;
+}
+.paypal-button{
+    margin-top: -20px;
+}
+.paypal-button p{
+    color: #7b7b7b;
+    font-size: 14px;
+}
+.paypal-btn{
+    height: 35px;
+    width: 200px;
+    background-color: #00c8c4;
+    color: white;
+    font-weight: 600;
+    border: none;
+    font-size: 15px;  
+}
+@media screen and (max-width:786px) {
+    .form{
+        display: flex;
+        flex-direction: column;
+    }
+    .inputs input{
+        width: 97%;
+       
+      }
+      .box{
+        width: 100%;
+    }
+    .input-container{
+        display: flex;
+        gap: 2rem;
+    }
+    
+}
